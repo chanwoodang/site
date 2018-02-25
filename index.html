@@ -6,13 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>CDA</title>
-    <link href='https://fonts.googleapis.com/css?family=Cabin' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Bitter' rel='stylesheet' type='text/css'>
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/lightbox.min.css">
+    <script type="text/javascript" src="js/lightbox-plus-jquery.min.js"></script>
     <style type="text/css">
       .carousel-caption{
           top: 0;
@@ -32,10 +32,28 @@
         background-size:100% 100%;
       }
       .carousel{}
-    </style>
-    <style type="text/css">
+      .gallery img{
+        filter: grayscale(100%);
+      }
+      .gallery img:hover{
+        filter: grayscale(0);
+        transition: .5s;
+        transform: scale(1.2);
+      }
       body {
-        font-family: 'Cabin', sans-serif;
+        font-family: 'product-sans', sans-serif;
+      }
+    </style>
+    <style>
+      @font-face{
+        font-family:"product-sans";
+        src:url("fonts/Product Sans Regular.ttf");
+      }
+      table{
+        width:100%;
+      }
+      td{
+        padding:25px;
       }
     </style>
   </head>
@@ -52,8 +70,9 @@
             <li data-target="#myCarousel" data-slide-to="2"><a style="color:#DCAAAA;background:transparent" href="#"><strong>Hobbies</strong></a></li>
             <li data-target="#myCarousel" data-slide-to="3"><a style="color:#DCAAAA;background:transparent" href="#"><strong>Fitness</strong></a></li>
             <li data-target="#myCarousel" data-slide-to="4"><a style="color:#DCAAAA;background:transparent" href="#"><strong>Gear</strong></a></li>
-            <li data-target="#myCarousel" data-slide-to="5"><a style="color:#DCAAAA;background:transparent" href="#"><strong>Links</strong></a></li>
-            <li data-target="#myCarousel" data-slide-to="6"><a style="color:#DCAAAA;background:transparent" href="#"><strong>Contact Me</strong></a></li>
+            <li data-target="#myCarousel" data-slide-to="5"><a style="color:#DCAAAA;background:transparent" href="#"><strong>Gallery</strong></a></li>
+            <li data-target="#myCarousel" data-slide-to="6"><a style="color:#DCAAAA;background:transparent" href="#"><strong>Links</strong></a></li>
+            <li data-target="#myCarousel" data-slide-to="7"><a style="color:#DCAAAA;background:transparent" href="#"><strong>Contact Me</strong></a></li>
           </ul>
         </div>
       </div>
@@ -70,6 +89,7 @@
               <li data-target="#myCarousel" data-slide-to="4"></li>
               <li data-target="#myCarousel" data-slide-to="5"></li>
               <li data-target="#myCarousel" data-slide-to="6"></li>
+              <li data-target="#myCarousel" data-slide-to="7"></li>
           </ol>   
           <!-- Wrapper for carousel items -->
           <div class="carousel-inner">
@@ -82,7 +102,7 @@
                         <tr>
                           <h3><strong>David 찬우 Ang</strong></h3>
                         </tr>
-                        <hr style="height:10px;background-color:#BBB"></hr>
+                        <hr style="height:6px;background-color:#BBB"></hr>
                         <tr>
                           <h3>Korean, Chinese, American</h3>
                         </tr>
@@ -213,11 +233,10 @@
                         <header>
                           <h1><b>Resources</b></h1>
                         </header>
-                        <p style="line-height:20px"><a href="https://www.youtube.com/user/flexforall2" target="_blank" class="text-danger" >Matt Ogus</a> - Really knowledgable about training. One of the best natural physiques out there</p>
                         <p style="line-height:20px"><a href="https://www.youtube.com/user/computerman91" target="_blank" class="text-danger" >David Laid</a> - One of my biggest inspirations</p>
+                        <p style="line-height:20px"><a href="https://www.youtube.com/channel/UC8boqWGqHCVc1b7DbdwRVOQ" target="_blank" class="text-danger" >Dylan McKenna</a> - Friends with David Laid and has a similar video style</p>
                         <p style="line-height:20px"><a href="https://www.youtube.com/user/GymSharkTV" target="_blank" class="text-danger" >Gymshark</a> - Workout clothing company based in UK</p>
                         <p style="line-height:20px"><a href="https://www.youtube.com/channel/UCadiU6WTKl65HUwEih1XLYg" target="_blank" class="text-danger" >PictureFit</a> - Informational and visual fitness channel</p>
-                        <p style="line-height:20px"><a href="https://www.youtube.com/channel/UC8boqWGqHCVc1b7DbdwRVOQ" target="_blank" class="text-danger" >Dylan McKenna</a> - Friends with David Laid and has a similar video style</p>
                       </div></div></div>
                     </div>
                   </font></div>
@@ -270,6 +289,31 @@
                     </div></div></div>
                   </font></div>
                 </div>
+              <div class="item" id="gallery">
+                  <img class="img-responsive" src="img/gallery.jpg">
+                  <div class="carousel-caption"><h1 style="background-color:rgba(70,70,70,0.5);font-size:8vw">Gallery</h1></div>
+                  <div class="container"><font color="#000000" size="5">
+                    <div class="container col-lg-12 col-md-12 col-sm-12 col-xs-12" style="padding:20px"><div class="card" style="background-color:#EEE"><div class="jumbotron">                  
+                      <table class="gallery">
+                        <tr>
+                          <td style="height:30%;width:30%"><a href="img/gallery/1.jpg" data-lightbox="mygallery"><img class="img-responsive" src="img/gallery/1.jpg"></a></td>
+                          <td style="height:30%;width:30%"><a href="img/gallery/2.jpg" data-lightbox="mygallery"><img class="img-responsive" src="img/gallery/2.jpg"></a></td>
+                          <td style="height:30%;width:30%"><a href="img/gallery/3.jpg" data-lightbox="mygallery"><img class="img-responsive" src="img/gallery/3.jpg"></a></td>
+                        </tr>
+                        <tr>
+                          <td style="height:30%;width:30%"><a href="img/gallery/4.jpg" data-lightbox="mygallery"><img class="img-responsive" src="img/gallery/4.jpg"></a></td>
+                          <td style="height:30%;width:30%"><a href="img/gallery/5.jpg" data-lightbox="mygallery"><img class="img-responsive" src="img/gallery/5.jpg"></a></td>
+                          <td style="height:30%;width:30%"><a href="img/gallery/6.jpg" data-lightbox="mygallery"><img class="img-responsive" src="img/gallery/6.jpg"></a></td>
+                        </tr>
+                        <tr>
+                          <td style="height:30%;width:30%"><a href="img/gallery/7.jpg" data-lightbox="mygallery"><img class="img-responsive" src="img/gallery/7.jpg"></a></td>
+                          <td style="height:30%;width:30%"><a href="img/gallery/8.jpg" data-lightbox="mygallery"><img class="img-responsive" src="img/gallery/8.jpg"></a></td>
+                          <td style="height:30%;width:30%"><a href="img/gallery/9.jpg" data-lightbox="mygallery"><img class="img-responsive" src="img/gallery/9.jpg"></a></td>
+                        </tr>
+                      </table>
+                    </div></div></div>
+                  </font></div>
+              </div>
               <div class="item" id="internet">
                   <img class="img-responsive" src="img/internet.jpg">
                   <div class="carousel-caption"><h1 style="background-color:rgba(70,70,70,0.5);font-size:8vw">Internet Links</h1></div>
@@ -281,6 +325,12 @@
                         </header>
                         <p style="line-height:20px"><a href="https://www.youtube.com/watch?v=05VXgM6KrhM" target="_blank" class="text-danger" >Marblelympics</a> - Most dedicated satire I have ever seen</p>
                         <p style="line-height:20px"><a href="https://www.youtube.com/user/schnooleheletteletto/videos" target="_blank" class="text-danger" >schnooleheletteletto</a> - A different type of humor</p>
+                      </div></div></div>
+                      <div class="container col-lg-12 col-md-12 col-sm-12 col-xs-12" style="padding:20px"><div class="card" style="background-color:#EEE"><div class="jumbotron" style="height:300px">
+                        <header>
+                          <h1><b>Music</b></h1>
+                        </header>
+                        <p style="line-height:20px"><a href="https://open.spotify.com/user/12124756551/playlist/64bY1unYN5fSiPESStmHuc?si=nrV-q9twQo2MPMZUyVbQ_A" target="_blank" class="text-danger" >Classical</a> - Link to my Classical Spotify Playlist</p>
                       </div></div></div>
                       <div class="container col-lg-12 col-md-12 col-sm-12 col-xs-12" style="padding:20px"><div class="card" style="background-color:#EEE"><div class="jumbotron" style="height:300px">
                         <header>
