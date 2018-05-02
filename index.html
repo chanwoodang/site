@@ -11,8 +11,6 @@
     <script src="js/bootstrap.min.js"></script>
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/lightbox.min.css">
-    <script type="text/javascript" src="js/lightbox-plus-jquery.min.js"></script>
     <style type="text/css">
       .carousel-caption{
           top: 0;
@@ -32,14 +30,6 @@
         background-size:100% 100%;
       }
       .carousel{}
-      .gallery img{
-        filter: grayscale(100%);
-      }
-      .gallery img:hover{
-        filter: grayscale(0);
-        transition: .5s;
-        transform: scale(1.2);
-      }
       body {
         font-family: 'product-sans', sans-serif;
       }
@@ -48,10 +38,6 @@
       @font-face{
         font-family:"product-sans";
         src:url("fonts/Product Sans Regular.ttf");
-      }
-      @font-face{
-        font-family:"consolas";
-        src:url("fonts/Consolas.ttf");
       }
       table{
         width:100%;
@@ -72,11 +58,7 @@
             <li data-target="#myCarousel" data-slide-to="0" class="active"><a style="color:#DCAAAA;background:transparent" href="#"><strong>About</strong></a></li>
             <li data-target="#myCarousel" data-slide-to="1"><a style="color:#DCAAAA;background:transparent" href="#"><strong>Projects</strong></a></li>
             <li data-target="#myCarousel" data-slide-to="2"><a style="color:#DCAAAA;background:transparent" href="#"><strong>Hobbies</strong></a></li>
-            <li data-target="#myCarousel" data-slide-to="3"><a style="color:#DCAAAA;background:transparent" href="#"><strong>Fitness</strong></a></li>
-            <li data-target="#myCarousel" data-slide-to="4"><a style="color:#DCAAAA;background:transparent" href="#"><strong>Gear</strong></a></li>
-            <li data-target="#myCarousel" data-slide-to="5"><a style="color:#DCAAAA;background:transparent" href="#"><strong>Gallery</strong></a></li>
-            <li data-target="#myCarousel" data-slide-to="6"><a style="color:#DCAAAA;background:transparent" href="#"><strong>Links</strong></a></li>
-            <li data-target="#myCarousel" data-slide-to="7"><a style="color:#DCAAAA;background:transparent" href="#"><strong>Contact Me</strong></a></li>
+            <li data-target="#myCarousel" data-slide-to="3"><a style="color:#DCAAAA;background:transparent" href="#"><strong>Contact Me</strong></a></li>
           </ul>
         </div>
       </div>
@@ -90,16 +72,13 @@
               <li data-target="#myCarousel" data-slide-to="1"></li>
               <li data-target="#myCarousel" data-slide-to="2"></li>
               <li data-target="#myCarousel" data-slide-to="3"></li>
-              <li data-target="#myCarousel" data-slide-to="4"></li>
-              <li data-target="#myCarousel" data-slide-to="5"></li>
-              <li data-target="#myCarousel" data-slide-to="6"></li>
-              <li data-target="#myCarousel" data-slide-to="7"></li>
           </ol>   
           <!-- Wrapper for carousel items -->
           <div class="carousel-inner">
               <div class="item active" id="about me">
                   <img class="img-responsive" src="img/aboutme.jpg">
-                  <div class="carousel-caption"><h1 style="background-color:rgba(70,70,70,0.5);font-size:8vw">About Me</h1></div>
+                  <div class="carousel-caption"><h1 style="background-color:rgba(70,70,70,0.5);font-size:8vw">About Me</h1>
+                  </div>
                   <div class="container"><font color="#000000" size="5">
                     <div class="row">
                       <div class="container col-lg-12 col-md-12 col-sm-12 col-xs-12" style="padding:20px"><div class="card" style="background-color:#EEE"><div class="jumbotron">
@@ -202,151 +181,6 @@
                     </div>
                   </font></div>
                 </div>
-              <div class="item" id="fitness">
-                  <img class="img-responsive" src="img/fitness.jpg">
-                  <div class="carousel-caption"><h1 style="background-color:rgba(70,70,70,0.5);font-size:8vw">Fitness</h1></div>
-                  <div class="container"><font color="#000000" size="5">
-                    <div class="row">
-                      <div class="container col-lg-12 col-md-12 col-sm-12 col-xs-12" style="padding:20px"><div class="card" style="background-color:#EEE"><div class="jumbotron">
-                        <header>
-                          <h1><b>Powerlifting PRs</b></h1>
-                        </header>
-                        <p style="line-height:20px">Flat Bench: 185 lbs</p>
-                        <p style="line-height:20px">High-Bar Squat: 265 lbs</p>
-                        <p style="line-height:20px">Sumo Deadlift: 405 lbs</p>
-                      </div></div></div>
-                      <div class="container col-lg-12 col-md-12 col-sm-12 col-xs-12" style="padding:20px"><div class="card" style="background-color:#EEE"><div class="jumbotron">
-                        <header>
-                          <h1><b>Documents</b></h1>
-                        </header>
-                        <p style="line-height:20px"><a href="https://docs.google.com/document/d/1Kltc6JL619c1W-tSukwHIHzOQFxtru9YgUeBf9iaxK0/edit?usp=sharing" target="_blank" class="text-danger" >My Powerlifting Progress</a> - Tracked on a Google Doc</p>
-                        <p style="line-height:20px"><a href="https://docs.google.com/document/d/1wCFSuMCthHKLWVUVGi0ZnRGY6Y2f0-m_9jBpvR2Bdo4/edit?usp=sharing" target="_blank" class="text-danger" >Training and Diet</a> - Document I made with tips on training and diet</p>
-                      </div></div></div>
-                      <div class="container col-lg-12 col-md-12 col-sm-12 col-xs-12" style="padding:20px"><div class="card" style="background-color:#EEE"><div class="jumbotron">
-                        <header>
-                          <h1><b>Equipment</b></h1>
-                        </header>
-                        <p style="line-height:20px">Adidas Powerlift.3 Shoes (Black)</p>
-                        <p style="line-height:20px">Ader Powerlifting Belt (Red)</p>
-                        <p style="line-height:20px">FitXpert Knee Sleeves</p>
-                        <p style="line-height:20px">Stoic 18-inch Wrist Wraps</p>
-                        <p style="line-height:20px">Gymshark Lifting Straps</p>
-                        <p style="line-height:20px">Gymshark Ark and Phantom Seamless Collection</p>
-                      </div></div></div>
-                      <div class="container col-lg-12 col-md-12 col-sm-12 col-xs-12" style="padding:20px"><div class="card" style="background-color:#EEE"><div class="jumbotron">
-                        <header>
-                          <h1><b>Resources</b></h1>
-                        </header>
-                        <p style="line-height:20px"><a href="https://www.youtube.com/user/computerman91" target="_blank" class="text-danger" >David Laid</a> - One of my biggest inspirations</p>
-                        <p style="line-height:20px"><a href="https://www.youtube.com/channel/UC8boqWGqHCVc1b7DbdwRVOQ" target="_blank" class="text-danger" >Dylan McKenna</a> - Friends with David Laid and has a similar video style</p>
-                        <p style="line-height:20px"><a href="https://www.youtube.com/user/GymSharkTV" target="_blank" class="text-danger" >Gymshark</a> - Workout clothing company based in UK</p>
-                        <p style="line-height:20px"><a href="https://www.youtube.com/channel/UCadiU6WTKl65HUwEih1XLYg" target="_blank" class="text-danger" >PictureFit</a> - Informational and visual fitness channel</p>
-                      </div></div></div>
-                    </div>
-                  </font></div>
-              </div>
-              <div class="item" id="gear">
-                  <img class="img-responsive" src="img/gear.jpg">
-                  <div class="carousel-caption"><h1 style="background-color:rgba(70,70,70,0.5);font-size:8vw">Gear</h1></div>
-                  <div class="container"><font color="#000000">
-                    <div class="container col-lg-12 col-md-12 col-sm-12 col-xs-12" style="padding:20px"><div class="card" style="background-color:#EEE"><div class="jumbotron">
-                      <header>
-                        <h1><b>Lenovo Ideapad 510s</b></h1>
-                      </header>
-                      <p style="line-height:20px">Intel i7-6500U @ 2.5GHz</p>
-                      <p style="line-height:20px">AMD Radeon R7 M460</p>
-                      <p style="line-height:20px">14-inch IPS 1080p display</p>
-                      <p style="line-height:20px">8GB DDR4 RAM</p>
-                      <p style="line-height:20px">256GB SSD</p>
-                      <p style="line-height:20px">Windows 10</p>
-                    </div></div></div>
-                    <div class="container col-lg-12 col-md-12 col-sm-12 col-xs-12" style="padding:20px"><div class="card" style="background-color:#EEE"><div class="jumbotron">
-                      <header>
-                        <h1><b><s>BLU Vivo XL2 (Blue)</s></b></h1>
-                        <h3>February 2017 - November 2017</h3>
-                        <h1><b>Huawei Honor 6X 32GB (Gray)</b></h1>
-                        <h3>November 2017 - Present</h3>
-                      </header>
-                    </div></div></div>
-                    <div class="container col-lg-12 col-md-12 col-sm-12 col-xs-12" style="padding:20px"><div class="card" style="background-color:#EEE"><div class="jumbotron">
-                      <header>
-                        <h1><b>Audio-Technica ATH-M50X (White)</b></h1>
-                      </header>
-                    </div></div></div>
-                    <div class="container col-lg-12 col-md-12 col-sm-12 col-xs-12" style="padding:20px"><div class="card" style="background-color:#EEE"><div class="jumbotron">
-                      <header>
-                        <h1><b>Nikon D3300 w/ kit lens</b></h1>
-                      </header>
-                    </div></div></div>
-                    <div class="container col-lg-12 col-md-12 col-sm-12 col-xs-12" style="padding:20px"><div class="card" style="background-color:#EEE"><div class="jumbotron">
-                      <header>
-                        <h1><b>Aukey KM-G9 Mechanical Keyboard w/ Outemu Blue switches</b></h1>
-                      </header>
-                    </div></div></div>
-                    <div class="container col-lg-12 col-md-12 col-sm-12 col-xs-12" style="padding:20px"><div class="card" style="background-color:#EEE"><div class="jumbotron">
-                      <header>
-                        <h1><b>Ping Pong</b></h1>
-                      </header>
-                      <p style="line-height:20px">Stiga Pro Carbon Paddle</p>
-                      <p style="line-height:20px">Butterfly Racket Care Kit</p>
-                      <p style="line-height:20px">Killerspin Barracuda Bag</p>
-                    </div></div></div>
-                  </font></div>
-                </div>
-              <div class="item" id="gallery">
-                  <img class="img-responsive" src="img/gallery.jpg">
-                  <div class="carousel-caption"><h1 style="background-color:rgba(70,70,70,0.5);font-size:8vw">Gallery</h1></div>
-                  <div class="container"><font color="#000000" size="5">
-                    <div class="container col-lg-12 col-md-12 col-sm-12 col-xs-12" style="padding:20px"><div class="card" style="background-color:#EEE"><div class="jumbotron">                  
-                      <table class="gallery">
-                        <tr>
-                          <td style="height:30%;width:30%"><a href="img/gallery/1.jpg" data-lightbox="mygallery"><img class="img-responsive" src="img/gallery/1.jpg"></a></td>
-                          <td style="height:30%;width:30%"><a href="img/gallery/2.jpg" data-lightbox="mygallery"><img class="img-responsive" src="img/gallery/2.jpg"></a></td>
-                          <td style="height:30%;width:30%"><a href="img/gallery/3.jpg" data-lightbox="mygallery"><img class="img-responsive" src="img/gallery/3.jpg"></a></td>
-                        </tr>
-                        <tr>
-                          <td style="height:30%;width:30%"><a href="img/gallery/4.jpg" data-lightbox="mygallery"><img class="img-responsive" src="img/gallery/4.jpg"></a></td>
-                          <td style="height:30%;width:30%"><a href="img/gallery/5.jpg" data-lightbox="mygallery"><img class="img-responsive" src="img/gallery/5.jpg"></a></td>
-                          <td style="height:30%;width:30%"><a href="img/gallery/6.jpg" data-lightbox="mygallery"><img class="img-responsive" src="img/gallery/6.jpg"></a></td>
-                        </tr>
-                        <tr>
-                          <td style="height:30%;width:30%"><a href="img/gallery/7.jpg" data-lightbox="mygallery"><img class="img-responsive" src="img/gallery/7.jpg"></a></td>
-                          <td style="height:30%;width:30%"><a href="img/gallery/8.jpg" data-lightbox="mygallery"><img class="img-responsive" src="img/gallery/8.jpg"></a></td>
-                          <td style="height:30%;width:30%"><a href="img/gallery/9.jpg" data-lightbox="mygallery"><img class="img-responsive" src="img/gallery/9.jpg"></a></td>
-                        </tr>
-                      </table>
-                    </div></div></div>
-                  </font></div>
-              </div>
-              <div class="item" id="internet">
-                  <img class="img-responsive" src="img/internet.jpg">
-                  <div class="carousel-caption"><h1 style="background-color:rgba(70,70,70,0.5);font-size:8vw">Internet Links</h1></div>
-                  <div class="container"><font color="#000000">
-                    <div class="row">
-                      <div class="container col-lg-12 col-md-12 col-sm-12 col-xs-12" style="padding:20px"><div class="card" style="background-color:#EEE"><div class="jumbotron" style="height:300px">
-                        <header>
-                          <h1><b>Humor</b></h1>
-                        </header>
-                        <p style="line-height:20px"><a href="https://www.youtube.com/watch?v=05VXgM6KrhM" target="_blank" class="text-danger" >Marblelympics</a> - Most dedicated satire I have ever seen</p>
-                        <p style="line-height:20px"><a href="https://www.youtube.com/user/schnooleheletteletto/videos" target="_blank" class="text-danger" >schnooleheletteletto</a> - A different type of humor</p>
-                      </div></div></div>
-                      <div class="container col-lg-12 col-md-12 col-sm-12 col-xs-12" style="padding:20px"><div class="card" style="background-color:#EEE"><div class="jumbotron" style="height:300px">
-                        <header>
-                          <h1><b>Music</b></h1>
-                        </header>
-                        <p style="line-height:20px"><a href="https://open.spotify.com/user/12124756551/playlist/64bY1unYN5fSiPESStmHuc?si=nrV-q9twQo2MPMZUyVbQ_A" target="_blank" class="text-danger" >Classical</a> - Link to my Classical Spotify Playlist</p>
-                      </div></div></div>
-                      <div class="container col-lg-12 col-md-12 col-sm-12 col-xs-12" style="padding:20px"><div class="card" style="background-color:#EEE"><div class="jumbotron" style="height:300px">
-                        <header>
-                          <h1><b>Miscellaneous</b></h1>
-                        </header>
-                        <p style="line-height:20px"><a href="https://www.youtube.com/user/fazrulz1" target="_blank" class="text-danger" >Feliks Zemdegs</a> - Fastest Rubik's Cube solver in the world</p>
-                        <p style="line-height:20px"><a href="http://play.typeracer.com/" target="_blank" class="text-danger" >Type Racer</a> - What I use to practice typing</p>
-                        <p style="line-height:20px"><a href="https://terrytao.wordpress.com/2008/02/05/the-blue-eyed-islanders-puzzle/" target="_blank" class="text-danger" >Blue-Eyed Islander Puzzle</a> - Interesting logic puzzle</p>
-                      </div></div></div>
-                    </div>
-                  </font></div>
-              </div>
               <div class="item" id="contact">
                   <img class="img-responsive" src="img/contact.jpg">
                   <div class="carousel-caption"><h1 style="background-color:rgba(70,70,70,0.5);font-size:8vw">Contact Me</h1></div>
